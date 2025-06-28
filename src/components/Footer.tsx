@@ -3,9 +3,9 @@ import { Facebook, Twitter, Instagram, Youtube, Phone, Mail, MapPin, Smartphone 
 
 export const Footer = () => {
   return (
-    <footer className="bg-blue-900 text-white">
+    <footer className="bg-slate-900 text-white">
       {/* Newsletter Section */}
-      <div className="bg-red-600 py-8">
+      <div className="bg-orange-600 py-8">
         <div className="container mx-auto px-4 text-center">
           <h3 className="text-2xl font-bold mb-4">Stay Updated with Latest Offers!</h3>
           <div className="flex flex-col md:flex-row max-w-md mx-auto gap-4">
@@ -14,7 +14,7 @@ export const Footer = () => {
               placeholder="Enter your email address"
               className="flex-1 px-4 py-3 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-white"
             />
-            <button className="bg-blue-900 hover:bg-blue-800 px-8 py-3 rounded-lg font-bold transition-colors">
+            <button className="bg-slate-900 hover:bg-slate-800 px-8 py-3 rounded-lg font-bold transition-colors">
               SUBSCRIBE
             </button>
           </div>
@@ -28,8 +28,8 @@ export const Footer = () => {
             {/* Company Info */}
             <div>
               <div className="flex items-center space-x-2 mb-6">
-                <div className="bg-white text-blue-900 px-4 py-2 rounded-lg font-bold text-2xl">
-                  <span className="text-red-500">D</span>omino's
+                <div className="bg-white text-slate-900 px-4 py-2 rounded-lg font-bold text-2xl">
+                  <span className="text-orange-600">Pizza</span>Hub
                 </div>
               </div>
               <p className="text-gray-300 mb-6 leading-relaxed">
@@ -82,17 +82,17 @@ export const Footer = () => {
               <h3 className="text-xl font-bold mb-6">Get In Touch</h3>
               <div className="space-y-4 mb-6">
                 <div className="flex items-center space-x-3">
-                  <Phone size={18} className="text-red-500" />
-                  <span className="text-gray-300 font-medium">1800-111-123</span>
+                  <Phone size={18} className="text-orange-500" />
+                  <span className="text-gray-300 font-medium">1800-PIZZA-HUB</span>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <Mail size={18} className="text-red-500" />
-                  <span className="text-gray-300 font-medium">care@dominos.co.in</span>
+                  <Mail size={18} className="text-orange-500" />
+                  <span className="text-gray-300 font-medium">care@pizzahub.co.in</span>
                 </div>
                 <div className="flex items-start space-x-3">
-                  <MapPin size={18} className="text-red-500 mt-1" />
+                  <MapPin size={18} className="text-orange-500 mt-1" />
                   <span className="text-gray-300 font-medium leading-relaxed">
-                    Domino's Pizza India Ltd.<br />
+                    PizzaHub India Ltd.<br />
                     Mumbai, Maharashtra<br />
                     India
                   </span>
@@ -118,11 +118,11 @@ export const Footer = () => {
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-blue-800 py-6">
+      <div className="border-t border-slate-800 py-6">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-300 text-sm mb-4 md:mb-0">
-              © 2024 Domino's Pizza India Private Limited. All rights reserved.
+              © 2024 PizzaHub India Private Limited. All rights reserved.
             </p>
             <div className="flex space-x-6">
               <a href="#terms" className="text-gray-300 hover:text-white text-sm transition-colors">Terms of Use</a>
