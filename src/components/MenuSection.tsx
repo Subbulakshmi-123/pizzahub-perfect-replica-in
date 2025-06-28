@@ -14,7 +14,7 @@ const menuData = {
       description: "Classic delight with 100% real mozzarella cheese, fresh basil and oregano",
       price: 299,
       originalPrice: 399,
-      image: "https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?w=300&h=200&fit=crop",
+      image: "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=300&h=200&fit=crop",
       rating: 4.5,
       category: "Veg",
       isVeg: true,
@@ -26,7 +26,7 @@ const menuData = {
       description: "American classic with pepperoni, cheese and signature pizza sauce",
       price: 449,
       originalPrice: 549,
-      image: "https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?w=300&h=200&fit=crop",
+      image: "https://images.unsplash.com/photo-1628840042765-356cda07504e?w=300&h=200&fit=crop",
       rating: 4.7,
       category: "Non-Veg",
       isVeg: false,
@@ -38,7 +38,7 @@ const menuData = {
       description: "Loaded with fresh vegetables, capsicum, onions, tomatoes and cheese",
       price: 399,
       originalPrice: 499,
-      image: "https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?w=300&h=200&fit=crop",
+      image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=300&h=200&fit=crop",
       rating: 4.3,
       category: "Veg",
       isVeg: true,
@@ -50,7 +50,7 @@ const menuData = {
       description: "Grilled chicken with BBQ sauce, onions and cheese",
       price: 499,
       originalPrice: 599,
-      image: "https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?w=300&h=200&fit=crop",
+      image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=300&h=200&fit=crop",
       rating: 4.6,
       category: "Non-Veg",
       isVeg: false,
@@ -62,7 +62,7 @@ const menuData = {
       description: "Delightful combination of onion, capsicum, tomato & grilled mushroom",
       price: 349,
       originalPrice: 449,
-      image: "https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?w=300&h=200&fit=crop",
+      image: "https://images.unsplash.com/photo-1571997478779-2adcbbe9ab2f?w=300&h=200&fit=crop",
       rating: 4.4,
       category: "Veg",
       isVeg: true,
@@ -74,7 +74,7 @@ const menuData = {
       description: "Loaded with double pepper barbecue chicken, peri-peri chicken, chicken tikka & grilled chicken rashers",
       price: 599,
       originalPrice: 699,
-      image: "https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?w=300&h=200&fit=crop",
+      image: "https://images.unsplash.com/photo-1594007654729-407eedc4be65?w=300&h=200&fit=crop",
       rating: 4.8,
       category: "Non-Veg",
       isVeg: false,
@@ -88,7 +88,7 @@ const menuData = {
       description: "Freshly baked garlic breadsticks with herbs",
       price: 99,
       originalPrice: 129,
-      image: "https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?w=300&h=200&fit=crop",
+      image: "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=300&h=200&fit=crop",
       rating: 4.2,
       category: "Sides",
       isVeg: true,
@@ -100,11 +100,23 @@ const menuData = {
       description: "Spicy chicken wings with dip",
       price: 199,
       originalPrice: 249,
-      image: "https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?w=300&h=200&fit=crop",
+      image: "https://images.unsplash.com/photo-1567620832903-9fc6debc209f?w=300&h=200&fit=crop",
       rating: 4.5,
       category: "Sides",
       isVeg: false,
       isBestseller: true
+    },
+    {
+      id: 9,
+      name: "Potato Wedges",
+      description: "Crispy potato wedges with herbs and spices",
+      price: 149,
+      originalPrice: 179,
+      image: "https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?w=300&h=200&fit=crop",
+      rating: 4.3,
+      category: "Sides",
+      isVeg: true,
+      isBestseller: false
     }
   ],
   beverages: [
@@ -114,11 +126,35 @@ const menuData = {
       description: "Chilled Coca Cola 200ml",
       price: 59,
       originalPrice: 69,
-      image: "https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?w=300&h=200&fit=crop",
+      image: "https://images.unsplash.com/photo-1581636625402-29b2a704ef13?w=300&h=200&fit=crop",
       rating: 4.0,
       category: "Beverages",
       isVeg: true,
       isBestseller: false
+    },
+    {
+      id: 11,
+      name: "Fresh Lime Water",
+      description: "Refreshing lime water with mint",
+      price: 39,
+      originalPrice: 49,
+      image: "https://images.unsplash.com/photo-1556881287-094b6f1bf0c7?w=300&h=200&fit=crop",
+      rating: 4.1,
+      category: "Beverages",
+      isVeg: true,
+      isBestseller: false
+    },
+    {
+      id: 12,
+      name: "Iced Tea",
+      description: "Cool and refreshing iced tea",
+      price: 79,
+      originalPrice: 99,
+      image: "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=300&h=200&fit=crop",
+      rating: 4.2,
+      category: "Beverages",
+      isVeg: true,
+      isBestseller: true
     }
   ]
 };
@@ -129,6 +165,30 @@ interface MenuSectionProps {
 
 export const MenuSection = ({ onAddToCart }: MenuSectionProps) => {
   const [activeTab, setActiveTab] = useState("pizzas");
+  const [favorites, setFavorites] = useState<number[]>([]);
+
+  const toggleFavorite = (itemId: number) => {
+    setFavorites(prev => 
+      prev.includes(itemId) 
+        ? prev.filter(id => id !== itemId)
+        : [...prev, itemId]
+    );
+  };
+
+  const handleAddToCart = (item: any) => {
+    onAddToCart(item);
+    // Show a brief feedback
+    const button = document.getElementById(`add-to-cart-${item.id}`);
+    if (button) {
+      const originalText = button.textContent;
+      button.textContent = 'ADDED!';
+      button.style.backgroundColor = '#16a34a';
+      setTimeout(() => {
+        button.textContent = originalText;
+        button.style.backgroundColor = '';
+      }, 1500);
+    }
+  };
 
   const renderMenuItems = (items: any[]) => {
     return (
@@ -157,8 +217,16 @@ export const MenuSection = ({ onAddToCart }: MenuSectionProps) => {
                 </div>
                 {/* Heart Icon */}
                 <div className="absolute top-3 right-3">
-                  <Button variant="ghost" size="sm" className="bg-white/80 hover:bg-white p-2 rounded-full">
-                    <Heart size={16} className="text-gray-600" />
+                  <Button 
+                    variant="ghost" 
+                    size="sm" 
+                    className="bg-white/80 hover:bg-white p-2 rounded-full"
+                    onClick={() => toggleFavorite(item.id)}
+                  >
+                    <Heart 
+                      size={16} 
+                      className={`${favorites.includes(item.id) ? 'text-red-500 fill-red-500' : 'text-gray-600'} transition-colors`} 
+                    />
                   </Button>
                 </div>
                 {/* Rating */}
@@ -190,7 +258,8 @@ export const MenuSection = ({ onAddToCart }: MenuSectionProps) => {
             
             <CardFooter className="p-4 pt-0">
               <Button 
-                onClick={() => onAddToCart(item)}
+                id={`add-to-cart-${item.id}`}
+                onClick={() => handleAddToCart(item)}
                 className="w-full bg-blue-900 hover:bg-blue-800 text-white font-bold py-3 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl"
               >
                 <Plus className="w-5 h-5 mr-2" />
@@ -214,25 +283,37 @@ export const MenuSection = ({ onAddToCart }: MenuSectionProps) => {
         <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
           <TabsList className="grid w-full max-w-lg mx-auto grid-cols-3 mb-12 h-14 bg-white shadow-lg rounded-xl p-2">
             <TabsTrigger value="pizzas" className="text-lg font-bold data-[state=active]:bg-blue-900 data-[state=active]:text-white rounded-lg transition-all duration-300">
-              PIZZAS
+              PIZZAS ({menuData.pizzas.length})
             </TabsTrigger>
             <TabsTrigger value="sides" className="text-lg font-bold data-[state=active]:bg-blue-900 data-[state=active]:text-white rounded-lg transition-all duration-300">
-              SIDES
+              SIDES ({menuData.sides.length})
             </TabsTrigger>
             <TabsTrigger value="beverages" className="text-lg font-bold data-[state=active]:bg-blue-900 data-[state=active]:text-white rounded-lg transition-all duration-300">
-              BEVERAGES
+              BEVERAGES ({menuData.beverages.length})
             </TabsTrigger>
           </TabsList>
 
           <TabsContent value="pizzas" className="space-y-8">
+            <div className="text-center mb-6">
+              <h3 className="text-2xl font-bold text-blue-900 mb-2">Our Signature Pizzas</h3>
+              <p className="text-gray-600">Hand-tossed pizzas made with fresh ingredients</p>
+            </div>
             {renderMenuItems(menuData.pizzas)}
           </TabsContent>
 
           <TabsContent value="sides" className="space-y-8">
+            <div className="text-center mb-6">
+              <h3 className="text-2xl font-bold text-blue-900 mb-2">Delicious Sides</h3>
+              <p className="text-gray-600">Perfect additions to complete your meal</p>
+            </div>
             {renderMenuItems(menuData.sides)}
           </TabsContent>
 
           <TabsContent value="beverages" className="space-y-8">
+            <div className="text-center mb-6">
+              <h3 className="text-2xl font-bold text-blue-900 mb-2">Refreshing Beverages</h3>
+              <p className="text-gray-600">Cool drinks to complement your food</p>
+            </div>
             {renderMenuItems(menuData.beverages)}
           </TabsContent>
         </Tabs>

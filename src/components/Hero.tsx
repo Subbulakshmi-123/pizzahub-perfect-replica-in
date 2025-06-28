@@ -41,7 +41,10 @@ export const Hero = () => {
               </div>
             </div>
 
-            <Button className="bg-red-600 hover:bg-red-700 text-white font-bold text-xl px-12 py-6 rounded-full transition-all duration-300 transform hover:scale-105 shadow-2xl">
+            <Button 
+              className="bg-red-600 hover:bg-red-700 text-white font-bold text-xl px-12 py-6 rounded-full transition-all duration-300 transform hover:scale-105 shadow-2xl"
+              onClick={() => document.getElementById('menu')?.scrollIntoView({ behavior: 'smooth' })}
+            >
               ORDER ONLINE NOW
               <ArrowRight className="ml-3" size={24} />
             </Button>
@@ -53,9 +56,9 @@ export const Hero = () => {
               {/* Main Pizza Image */}
               <div className="w-[400px] h-[400px] lg:w-[500px] lg:h-[500px] relative">
                 <img 
-                  src="https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?w=500&h=500&fit=crop&crop=center" 
+                  src="https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=500&h=500&fit=crop&crop=center" 
                   alt="Delicious Pizza"
-                  className="w-full h-full object-cover rounded-full shadow-2xl animate-pulse"
+                  className="w-full h-full object-cover rounded-full shadow-2xl"
                 />
                 {/* Pizza Glow Effect */}
                 <div className="absolute inset-0 rounded-full bg-gradient-to-r from-red-400/20 to-yellow-400/20 animate-pulse"></div>
