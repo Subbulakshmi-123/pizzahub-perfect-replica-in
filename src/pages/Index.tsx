@@ -5,10 +5,12 @@ import { Hero } from '@/components/Hero';
 import { MenuSection } from '@/components/MenuSection';
 import { Cart } from '@/components/Cart';
 import { Footer } from '@/components/Footer';
+import { useToast } from '@/hooks/use-toast';
 
 const Index = () => {
   const [cartItems, setCartItems] = useState([]);
   const [isCartOpen, setIsCartOpen] = useState(false);
+  const { toast } = useToast();
 
   const addToCart = (item) => {
     setCartItems(prev => {
@@ -48,6 +50,15 @@ const Index = () => {
     return cartItems.reduce((total, item) => total + (item.price * item.quantity), 0);
   };
 
+  const handleCheckout = () => {
+    toast({
+      title: "Order Confirmed! 🎉",
+      description: "Your delicious pizza order has been placed successfully. Expected delivery time: 25-30 minutes.",
+    });
+    setCartItems([]);
+    setIsCartOpen(false);
+  };
+
   return (
     <div className="min-h-screen bg-white">
       <Header 
@@ -64,6 +75,7 @@ const Index = () => {
         onRemoveItem={removeFromCart}
         onUpdateQuantity={updateQuantity}
         totalPrice={getTotalPrice()}
+        onCheckout={handleCheckout}
       />
     </div>
   );

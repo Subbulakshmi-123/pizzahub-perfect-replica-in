@@ -106,7 +106,7 @@ const About = () => {
               </div>
               <div className="relative">
                 <img 
-                  src="https://images.unsplash.com/photo-1559329007-40df8ac01d5e?w=600&h=400&fit=crop" 
+                  src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&h=400&fit=crop" 
                   alt="PizzaHub Kitchen"
                   className="rounded-2xl shadow-2xl"
                 />

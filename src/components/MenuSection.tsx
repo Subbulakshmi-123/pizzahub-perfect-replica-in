@@ -39,7 +39,7 @@ const menuData = {
       description: "Bell peppers, mushrooms, onions, tomatoes, olives & cheese",
       price: 299,
       originalPrice: 399,
-      image: "https://images.unsplash.com/photo-1571997478779-2adcbbe9ab2f?w=400&h=300&fit=crop",
+      image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=400&h=300&fit=crop",
       rating: 4.6,
       category: "Veg",
       isVeg: true,
@@ -58,19 +58,6 @@ const menuData = {
       isVeg: false,
       isBestseller: true,
       cookingTime: "20-25 min"
-    },
-    {
-      id: 5,
-      name: "Farmhouse Special",
-      description: "Grilled mushrooms, capsicum, tomato, onions with herbs",
-      price: 279,
-      originalPrice: 349,
-      image: "https://images.unsplash.com/photo-1571997478779-2adcbbe9ab2f?w=400&h=300&fit=crop",
-      rating: 4.5,
-      category: "Veg",
-      isVeg: true,
-      isBestseller: false,
-      cookingTime: "15-18 min"
     },
     {
       id: 6,
@@ -160,7 +147,7 @@ const menuData = {
       description: "Handcrafted lemonade with mint and ice",
       price: 79,
       originalPrice: 99,
-      image: "https://images.unsplash.com/photo-1553530666-ba11a7da3888?w=400&h=300&fit=crop",
+      image: "https://images.unsplash.com/photo-1625772452859-1c03d5bf1137?w=400&h=300&fit=crop",
       rating: 4.5,
       category: "Beverages",
       isVeg: true,
