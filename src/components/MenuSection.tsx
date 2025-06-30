@@ -295,7 +295,7 @@ export const MenuSection = ({ onAddToCart }: MenuSectionProps) => {
             </CardHeader>
             
             <CardContent className="p-6">
-              <CardTitle className="text-2xl font-black text-gray-800 mb-3 line-clamp-1 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+              <CardTitle className="text-2xl font-black text-gray-800 mb-3 line-clamp-1 bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">
                 {item.name}
               </CardTitle>
               <p className="text-gray-600 text-base mb-6 line-clamp-2 leading-relaxed font-medium">
@@ -324,7 +324,7 @@ export const MenuSection = ({ onAddToCart }: MenuSectionProps) => {
               <Button 
                 id={`add-to-cart-${item.id}`}
                 onClick={() => handleAddToCart(item)}
-                className="w-full bg-gradient-to-r from-purple-600 via-pink-600 to-red-600 hover:from-purple-700 hover:via-pink-700 hover:to-red-700 text-white font-black py-4 text-lg rounded-2xl transition-all duration-500 shadow-2xl hover:shadow-purple-500/25 transform hover:scale-105"
+                className="w-full bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-black py-4 text-lg rounded-2xl transition-all duration-500 shadow-2xl hover:shadow-orange-500/25 transform hover:scale-105"
               >
                 <Plus className="w-6 h-6 mr-3 animate-bounce" />
                 ADD TO CART
@@ -337,10 +337,10 @@ export const MenuSection = ({ onAddToCart }: MenuSectionProps) => {
   };
 
   return (
-    <section id="menu" className="py-20 bg-gradient-to-br from-purple-50 via-pink-50 to-blue-50">
+    <section id="menu" className="py-20 bg-gradient-to-br from-orange-50 via-red-50 to-yellow-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-6xl font-black bg-gradient-to-r from-purple-600 via-pink-600 to-red-600 bg-clip-text text-transparent mb-8">
+          <h2 className="text-6xl font-black bg-gradient-to-r from-orange-600 via-red-600 to-yellow-600 bg-clip-text text-transparent mb-8">
             Our Delicious Menu
           </h2>
           <p className="text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed font-medium">
@@ -349,22 +349,22 @@ export const MenuSection = ({ onAddToCart }: MenuSectionProps) => {
         </div>
 
         <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
-          <TabsList className="grid w-full max-w-2xl mx-auto grid-cols-3 mb-16 h-20 bg-white shadow-2xl rounded-3xl p-3 border-4 border-gradient-to-r from-purple-200 to-pink-200">
+          <TabsList className="grid w-full max-w-2xl mx-auto grid-cols-3 mb-16 h-20 bg-white shadow-2xl rounded-3xl p-3 border-4 border-gradient-to-r from-orange-200 to-red-200">
             <TabsTrigger 
               value="pizzas" 
-              className="text-xl font-black data-[state=active]:bg-gradient-to-r data-[state=active]:from-purple-600 data-[state=active]:to-pink-600 data-[state=active]:text-white rounded-2xl transition-all duration-500 transform hover:scale-105"
+              className="text-xl font-black data-[state=active]:bg-gradient-to-r data-[state=active]:from-orange-500 data-[state=active]:to-red-500 data-[state=active]:text-white rounded-2xl transition-all duration-500 transform hover:scale-105"
             >
               🍕 PIZZAS ({menuData.pizzas.length})
             </TabsTrigger>
             <TabsTrigger 
               value="sides" 
-              className="text-xl font-black data-[state=active]:bg-gradient-to-r data-[state=active]:from-orange-500 data-[state=active]:to-red-600 data-[state=active]:text-white rounded-2xl transition-all duration-500 transform hover:scale-105"
+              className="text-xl font-black data-[state=active]:bg-gradient-to-r data-[state=active]:from-orange-500 data-[state=active]:to-red-500 data-[state=active]:text-white rounded-2xl transition-all duration-500 transform hover:scale-105"
             >
               🍟 SIDES ({menuData.sides.length})
             </TabsTrigger>
             <TabsTrigger 
               value="beverages" 
-              className="text-xl font-black data-[state=active]:bg-gradient-to-r data-[state=active]:from-blue-500 data-[state=active]:to-purple-600 data-[state=active]:text-white rounded-2xl transition-all duration-500 transform hover:scale-105"
+              className="text-xl font-black data-[state=active]:bg-gradient-to-r data-[state=active]:from-orange-500 data-[state=active]:to-red-500 data-[state=active]:text-white rounded-2xl transition-all duration-500 transform hover:scale-105"
             >
               🥤 DRINKS ({menuData.beverages.length})
             </TabsTrigger>
@@ -372,7 +372,7 @@ export const MenuSection = ({ onAddToCart }: MenuSectionProps) => {
 
           <TabsContent value="pizzas" className="space-y-8 animate-fade-in">
             <div className="text-center mb-8">
-              <h3 className="text-4xl font-black bg-gradient-to-r from-red-600 to-orange-600 bg-clip-text text-transparent mb-4">
+              <h3 className="text-4xl font-black bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent mb-4">
                 🍕 Signature Pizzas
               </h3>
               <p className="text-xl text-gray-600 font-medium">Hand-tossed perfection with premium toppings</p>
@@ -392,7 +392,7 @@ export const MenuSection = ({ onAddToCart }: MenuSectionProps) => {
 
           <TabsContent value="beverages" className="space-y-8 animate-fade-in">
             <div className="text-center mb-8">
-              <h3 className="text-4xl font-black bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-4">
+              <h3 className="text-4xl font-black bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent mb-4">
                 🥤 Refreshing Beverages
               </h3>
               <p className="text-xl text-gray-600 font-medium">Cool drinks to complement your meal perfectly</p>

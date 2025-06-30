@@ -55,7 +55,7 @@ export const Hero = () => {
               </div>
             </div>
 
-            {/* CTA Buttons */}
+            {/* CTA Button - Only Order Now with orange gradient */}
             <div className="flex flex-col sm:flex-row gap-4">
               <Button 
                 className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-bold text-xl px-12 py-6 rounded-full transition-all duration-300 transform hover:scale-105 shadow-xl"
@@ -64,14 +64,6 @@ export const Hero = () => {
                 ORDER NOW
                 <ArrowRight className="ml-3" size={24} />
               </Button>
-              
-              <Button 
-                variant="outline"
-                className="border-2 border-white text-white hover:bg-white hover:text-slate-900 font-bold text-xl px-10 py-6 rounded-full transition-all duration-300 transform hover:scale-105"
-              >
-                <Star className="mr-3" size={20} />
-                View Menu
-              </Button>
             </div>
           </div>
 
@@ -79,35 +71,35 @@ export const Hero = () => {
           <div className="lg:w-1/2 relative flex justify-center">
             <div className="relative transform hover:scale-105 transition-all duration-500">
               {/* Main Round Pizza Image Container */}
-              <div className="w-[400px] h-[400px] lg:w-[500px] lg:h-[500px] relative">
+              <div className="w-[400px] h-[400px] lg:w-[500px] lg:h-[500px] relative z-10">
                 {/* Glow Background */}
                 <div className="absolute inset-0 rounded-full bg-gradient-to-r from-orange-400/20 to-red-400/20 blur-2xl animate-pulse"></div>
                 
-                {/* Round Pizza Image */}
+                {/* Round Pizza Image - Using 3rd pizza image */}
                 <img 
-                  src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=500&h=500&fit=crop&crop=center" 
+                  src="https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=500&h=500&fit=crop&crop=center" 
                   alt="Delicious PizzaHub Pizza"
                   className="w-full h-full object-cover rounded-full shadow-2xl relative z-10 border-4 border-white/10"
                 />
                 
                 {/* Animated Ring */}
-                <div className="absolute inset-0 rounded-full border-2 border-gradient-to-r from-orange-400 to-red-500 opacity-50"></div>
+                <div className="absolute inset-0 rounded-full border-2 border-gradient-to-r from-orange-400 to-red-500 opacity-50 z-20"></div>
               </div>
               
-              {/* Floating Elements */}
-              <div className="absolute -top-6 -right-6 bg-gradient-to-r from-green-500 to-emerald-500 text-white px-4 py-3 rounded-2xl font-bold text-sm animate-bounce shadow-xl transform rotate-12">
+              {/* Floating Elements - Made fully visible with higher z-index and better positioning */}
+              <div className="absolute -top-8 -right-8 bg-gradient-to-r from-green-500 to-emerald-500 text-white px-4 py-3 rounded-2xl font-bold text-sm animate-bounce shadow-2xl transform rotate-12 z-30">
                 🔥 Fresh & Hot!
               </div>
               
-              <div className="absolute -bottom-6 -left-6 bg-gradient-to-r from-yellow-500 to-orange-500 text-white px-4 py-3 rounded-2xl font-bold text-sm animate-bounce shadow-xl transform -rotate-12" style={{ animationDelay: '1s' }}>
+              <div className="absolute -bottom-8 -left-8 bg-gradient-to-r from-yellow-500 to-orange-500 text-white px-4 py-3 rounded-2xl font-bold text-sm animate-bounce shadow-2xl transform -rotate-12 z-30" style={{ animationDelay: '1s' }}>
                 ⭐ ₹199 Only
               </div>
               
-              <div className="absolute top-1/4 -left-10 bg-gradient-to-r from-orange-500 to-red-500 text-white px-3 py-2 rounded-full font-bold text-xs shadow-lg">
+              <div className="absolute top-1/4 -left-12 bg-gradient-to-r from-orange-500 to-red-500 text-white px-3 py-2 rounded-full font-bold text-xs shadow-2xl z-30">
                 🏆 Bestseller
               </div>
               
-              <div className="absolute bottom-1/4 -right-10 bg-gradient-to-r from-slate-600 to-slate-700 text-white px-3 py-2 rounded-full font-bold text-xs shadow-lg">
+              <div className="absolute bottom-1/4 -right-12 bg-gradient-to-r from-slate-600 to-slate-700 text-white px-3 py-2 rounded-full font-bold text-xs shadow-2xl z-30">
                 ⚡ 4.9★ Rated
               </div>
             </div>
