@@ -16,10 +16,11 @@ const Deals = () => {
       id: 1,
       title: "Buy 1 Get 1 Free",
       description: "Order any large pizza and get another large pizza absolutely free!",
-      image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=400&h=300&fit=crop",
+      image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=400&h=300&fit=crop",
       discount: "50% OFF",
       validUntil: "Valid till 31st Dec 2024",
-      code: "BOGO50"
+      code: "BOGO50",
+      rating: 4.8
     },
     {
       id: 2,
@@ -28,7 +29,8 @@ const Deals = () => {
       image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=400&h=300&fit=crop",
       discount: "₹999 Only",
       validUntil: "Valid till 25th Dec 2024",
-      code: "FAMILY999"
+      code: "FAMILY999",
+      rating: 4.7
     },
     {
       id: 3,
@@ -37,7 +39,8 @@ const Deals = () => {
       image: "https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?w=400&h=300&fit=crop",
       discount: "25% OFF",
       validUntil: "Valid till 30th Dec 2024",
-      code: "STUDENT25"
+      code: "STUDENT25",
+      rating: 4.5
     },
     {
       id: 4,
@@ -46,7 +49,8 @@ const Deals = () => {
       image: "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=400&h=300&fit=crop",
       discount: "20% OFF",
       validUntil: "Valid on Weekends",
-      code: "WEEKEND20"
+      code: "WEEKEND20",
+      rating: 4.6
     }
   ];
 
@@ -95,6 +99,13 @@ const Deals = () => {
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600 mb-4 text-lg">{deal.description}</p>
+                  
+                  {/* Rating as text */}
+                  <div className="flex items-center gap-1 mb-4">
+                    <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+                    <span className="text-sm font-bold text-gray-700">{deal.rating} Rating</span>
+                  </div>
+                  
                   <div className="flex items-center justify-between mb-4">
                     <div className="flex items-center text-sm text-gray-500">
                       <Clock size={16} className="mr-1" />

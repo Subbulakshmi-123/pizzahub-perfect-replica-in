@@ -39,7 +39,7 @@ const menuData = {
       description: "Bell peppers, mushrooms, onions, tomatoes, olives & cheese",
       price: 299,
       originalPrice: 399,
-      image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=400&h=300&fit=crop",
+      image: "https://images.unsplash.com/photo-1571997478779-2adcbbe9ab2f?w=400&h=300&fit=crop",
       rating: 4.6,
       category: "Veg",
       isVeg: true,
@@ -160,7 +160,7 @@ const menuData = {
       description: "Handcrafted lemonade with mint and ice",
       price: 79,
       originalPrice: 99,
-      image: "https://images.unsplash.com/photo-1556881287-094b6f1bf0c7?w=400&h=300&fit=crop",
+      image: "https://images.unsplash.com/photo-1553530666-ba11a7da3888?w=400&h=300&fit=crop",
       rating: 4.5,
       category: "Beverages",
       isVeg: true,
@@ -279,12 +279,8 @@ export const MenuSection = ({ onAddToCart }: MenuSectionProps) => {
                   </Button>
                 </div>
                 
-                {/* Enhanced Rating & Cooking Time */}
-                <div className="absolute bottom-3 md:bottom-4 right-3 md:right-4 flex flex-col gap-2">
-                  <div className="bg-gradient-to-r from-green-500 to-green-600 text-white px-2 md:px-3 py-1 md:py-2 rounded-xl flex items-center gap-1 md:gap-2 text-xs md:text-sm font-bold shadow-lg">
-                    <Star className="w-3 md:w-4 h-3 md:h-4 fill-white" />
-                    {item.rating}
-                  </div>
+                {/* Cooking Time */}
+                <div className="absolute bottom-3 md:bottom-4 right-3 md:right-4">
                   <div className="bg-gradient-to-r from-blue-500 to-blue-600 text-white px-2 md:px-3 py-1 md:py-2 rounded-xl flex items-center gap-1 md:gap-2 text-xs font-bold shadow-lg">
                     <Clock className="w-2 md:w-3 h-2 md:h-3" />
                     {item.cookingTime}
@@ -300,6 +296,12 @@ export const MenuSection = ({ onAddToCart }: MenuSectionProps) => {
               <p className="text-gray-600 text-sm md:text-base mb-4 md:mb-6 line-clamp-2 leading-relaxed font-medium">
                 {item.description}
               </p>
+              
+              {/* Rating as text below description */}
+              <div className="flex items-center gap-1 mb-4">
+                <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+                <span className="text-sm font-bold text-gray-700">{item.rating} Rating</span>
+              </div>
               
               <div className="flex items-center justify-between mb-4 md:mb-6">
                 <div className="flex items-center gap-2 md:gap-3">

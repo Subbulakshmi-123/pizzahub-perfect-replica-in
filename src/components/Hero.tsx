@@ -77,7 +77,7 @@ export const Hero = () => {
                 
                 {/* Round Pizza Image */}
                 <img 
-                  src="https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=500&h=500&fit=crop&crop=center" 
+                  src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=500&h=500&fit=crop&crop=center" 
                   alt="Delicious PizzaHub Pizza"
                   className="w-full h-full object-cover rounded-full shadow-2xl relative z-10 border-4 border-white/10"
                 />
