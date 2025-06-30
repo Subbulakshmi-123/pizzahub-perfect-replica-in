@@ -26,7 +26,7 @@ const menuData = {
       description: "Premium pepperoni, mozzarella cheese, signature pizza sauce",
       price: 349,
       originalPrice: 449,
-      image: "https://images.unsplash.com/photo-1628840042765-356cda07504e?w=400&h=300&fit=crop",
+      image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=400&h=300&fit=crop",
       rating: 4.7,
       category: "Non-Veg",
       isVeg: false,
