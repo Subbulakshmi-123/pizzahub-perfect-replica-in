@@ -22,9 +22,10 @@ interface CartProps {
   onRemoveItem: (itemId: number) => void;
   onUpdateQuantity: (itemId: number, quantity: number) => void;
   totalPrice: number;
+  onCheckout: () => void;
 }
 
-export const Cart = ({ isOpen, onClose, items, onRemoveItem, onUpdateQuantity, totalPrice }: CartProps) => {
+export const Cart = ({ isOpen, onClose, items, onRemoveItem, onUpdateQuantity, totalPrice, onCheckout }: CartProps) => {
   const deliveryFee = 29;
   const gstRate = 0.05;
   const gstAmount = Math.round(totalPrice * gstRate);
@@ -118,7 +119,10 @@ export const Cart = ({ isOpen, onClose, items, onRemoveItem, onUpdateQuantity, t
                 <span>₹{finalTotal}</span>
               </div>
               
-              <Button className="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-3 mt-4 rounded-lg">
+              <Button 
+                onClick={onCheckout}
+                className="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-3 mt-4 rounded-lg"
+              >
                 Proceed to Checkout - ₹{finalTotal}
               </Button>
               
