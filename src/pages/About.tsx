@@ -169,7 +169,7 @@ const About = () => {
                 {
                   name: "Priya Patel",
                   role: "Head Chef",
-                  image: "https://images.unsplash.com/photo-1494790108755-2616b2e0eeb5?w=300&h=300&fit=crop&crop=face"
+                  image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=300&h=300&fit=crop&crop=face"
                 },
                 {
                   name: "Arjun Kumar",
